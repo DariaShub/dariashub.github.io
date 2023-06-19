@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #135;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#project" style="font-family:georgia;">Project</a></li>
+  <li><a href="#Russianrockbands"style="font-family:georgia;">Russian rock bands</a></li>
+  <li><a href="#Romanianmusicbands"style="font-family:georgia;">Romanian music bands</a></li>
+  <li><a href="#report"style="font-family:georgia;">Report</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#E5F5F5;height:2650px;">
+<img src="https://i.etsystatic.com/35092126/r/il/a73db2/4788244285/il_fullxfull.4788244285_sfv2.jpg" alt="rock" style="width:650px;height:400px;">
+<h1 style="font-family:georgia;"> <strong>Project</strong></h1>
+<h1 style="font-family:georgia;"><small>R&R music bands</small> </h1>
+<p style="font-family:timesnewroman;">Hello! This project was carried out by three international students form Russia and Romania. We decided to focus on things that represent our cultures, that's why our project is about Russian and Romanian music bands. </p>
+<p style="font-family:timesnewroman;"> Since Russian rock music plays important role in Russian music, we found numerous examples of it during our research and decided to create a story specifically about this genre. 
+<p>On the other hand, Romanian rock music is not as widely represented as the Russian one, that is why our second story includes Romanian music bands without specifying their genre.
+<p style="font-family:timesnewroman;"><i> <b> In this project we have strived to explore Russian rock as well as Romanian music bands using knowledge graphs and to give an overview of the Russian and Romanian music scene with visual aids such as tables and charts. </i> </b> </p>
+
+<p style="font-family:georgia;"> <b> We hope you will enjoy our project and find it interesting! </b></p>
+<p style="font-family:timesnewroman;"> Yours,<br>Daria Shubina<br>Lada Shchigoreva<br>Rafael Morna</p>
+
+<hr>
+
+<h1 style="font-family:georgia;">Russian rock bands</h1>
+<h3 style="font-family:georgia;"><i>and one band in particular</i></h3>
+
+<style="font-family:timesnewroman;"> Attempting to provide <style="font-family:timesnewroman;"><a href="https://melody-data.github.io/stories/published_stories/story_1685630421.646025.html"> an exact count of Russian rock bands </a> can be a daunting task due to their numerous nature. However, this particular project endeavors to provide an approximate estimation of the existing bands, shedding light on their collective landscape. Moreover, the project offers a comprehensive overview of these bands, with a particular focus on DDT, which holds a special place as the project's personal favorite. Within the project, one can explore the intricate composition of the DDT band, as well as delve into the diverse range of musical genres in which they skillfully create their music. </p>
+<img src="https://cn15.nevsedoma.com.ua/photo/14/1416/108_files/1269f48ceb06151d494c871ff4192571.jpg" alt="DDT" style="width:450px;height:300px;">
+<hr>
+
+<h1 style="font-family:georgia;">Romanian music bands</h1>
+<p style="font-family:timesnewroman;">The present story endeavors to provide a comprehensive overview of some of <a href="https://melody-data.github.io/stories/published_stories/story_1687094824.707894.html ">the most renowned Romanian music bands</a>. Accompanied by visual representations in the form of pictures, the project seeks to offer a general perspective on these bands. Additionally, the project aims to provide more detailed information about specific musical groups, shedding light on their distinct characteristics and contributions to the Romanian music scene. </p>
+<img src="https://i.ytimg.com/vi/d8H1vWUlV58/maxresdefault.jpg" alt="DjProject" style="width:450px;height:300px;">
+
+<hr>
+
+<h1 style="font-family:georgia;">Report</h1>
+<h2 style="font-family:georgia;"> <i> Methodology, tools and data sources</i> </h2>
+<p style="font-family:timesnewroman;"> Before starting to write the queries for the project, we explored the <b> Polifonia corpus </b> and tried writing sentences like <i>Composition of Russian rock bands</i> or <i>Composition of Romanian music bands</i> on FRED (Text-to-AMR-to-FRED (cnr.it)) to get our heads around the terminology we need to use when we create stories about Russian and Romanian bands. We decided to use <b> Wikidata</b> when creating our stories as we consider it useful for future application in our careers, thus we found the terms and Wikidata codes on <b>FRED</b> and after studying in detail the queries we looked at in class and practiced during the hands-on lesson, we could use them to write our own queries on <b>Wikidata Query Service</b>. 
+
+<p style="font-family:timesnewroman;"> For the queries we used <b> SPARQL language </b> that is based on triple patterns, including subject, object and predicate. To create a query we used SELECT (to define the information we are looking for), WHERE (to define the source of information), OPTIONAL (for example, to add pictures for bands when there are some but not restrict the search in case there is no picture available), LIMIT (to restrict the search and limit it to a particular number of results – not to overwhelm the graphs). </p>
+To check if the query was written in the right way, we ran the query on <b> Wikidata Query Service </b> before inserting it into Melody. But once the query worked, we created a linechart/pie chart/table on Melody to show the results of the search in a more beautiful and understandable way.
+
+<h2 style="font-family:georgia;"> <i> Challenges </i> </h2>
+<p style="font-family:timesnewroman;"> While writing queries on Wikidata Query Service, we encountered a few challenges such as  <b> lack of information </b> (for example about some of the Romanian rock bands), in which case we changed the focus of our research to Romanian music bands in general. Also, another challenge for us was <b> creating a map </b>, showing Russian rock bands and Romanian music bands according to the city where they were formed, on Melody. We used the <b><i> ?formationLocationLabel </b></i> and wrote the query that worked on Wikidata Query Service, however <i> the result was 0</i>, that is why we could not display it on Melody.</p>
+
+</body>
+</html>
+
+
+
